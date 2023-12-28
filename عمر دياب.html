@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="descripe" content="اغاني , تحميل اغاني , موقع اغاني">
+    <title>اغاني</title>
+</head>
+<style>
+    body{
+        margin-left: 37%;
+    }
+    p{
+        font-size: 30px;
+    }
+
+</style>
+<body>
+    <div>
+    <p>اغاني عمر دياب</p>
+    <div>
+        <div class="search-container">
+            <form action="#" method="get">
+                <input type="text" id="searchInput" name="search" placeholder="Search for songs">
+                <input type="submit" value="Search">
+            </form>
+        </div>
+    
+          
+    <p>لو بتحب</p>
+    <audio controls src="Albumaty.Com_amrw_dyab_lw_bthb.mp3"></audio>
+    </body>
+</div>
+
+
+<div>
+    <p>مش جديد </p>
+
+    <audio controls src="06._Mosh_Gedeed.mp3"></audio>
+</div>
+
+
+<div>
+    <p>مش اناني</p>
+    <audio controls src="06._Mosh_Gedeed.mp3"></audio>
+</div>
+
+<div>
+    <p>شوفت ياما</p>
+    <audio src="01._Shoft_Elayam.mp3" controls></audio>
+</div>
+
+<div>
+    <p> بحبك يا مصر</p>
+    <audio src="Ana Baashaqik Ya Masr.mp3" controls></audio>
+</div>
+
+<div>
+    <p>متغير</p>
+    <audio src="Metghayr.mp3" controls></audio>
+</div>
+
+<div>
+    <p>بحبه</p>
+    <audio src="Ba7bo.mp3" controls></audio>
+</div>
+
+<div>
+    <p>يوم تلات</p>
+    <audio src="Youm Talat.mp3" controls></audio>
+</div>
+
+<div>
+    <p>انا غير ريمكس</p>
+    <audio src="Ana Gheir.R.mp3" controls></audio>
+</div>
+
+<div>
+    <p>يوم تلات ريمكس</p>
+    <audio src="Youm Talat.R.mp3" controls></audio>
+</div>
+
+</div>
+
+
+    
+</body>
+<script>
+    function searchFunction() {
+        var input, filter, div, p, i, txtValue;
+        input = document.getElementById('searchInput');
+        filter = input.value.toUpperCase();
+        div = document.getElementById('songList');
+        p = div.getElementsByTagName('p');
+
+        for (i = 0; i < p.length; i++) {
+            txtValue = p[i].textContent || p[i].innerText;
+            if (txtValue.toUpperCase().indexOf(filter) > -1) {
+                p[i].style.display = '';
+            } else {
+                p[i].style.display = 'none';
+            }
+        }
+    }
+</script>
+</html>
